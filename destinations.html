@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Destinations | Eritrea Uncovered</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Eritrea Uncovered</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Eritrea</a></li>
+      <li><a href="destinations.html" class="active">Destinations</a></li>
+
+      <li><a href="travel-planning.html">Travel Planning</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section id="destinations-intro">
+      <h2>Places to Visit in Eritrea</h2>
+      <p>From highland cities to coastal islands, Eritrea offers unforgettable destinations for every traveller.</p>
+    </section>
+
+    <!-- Category filter buttons -->
+    <div class="filter-buttons" id="filter-buttons">
+      <button class="filter-btn active" data-category="all">All</button>
+      <button class="filter-btn" data-category="cities">Cities &amp; Architecture</button>
+      <button class="filter-btn" data-category="ruins">Historical Ruins</button>
+      <button class="filter-btn" data-category="coastal">Coastal &amp; Islands</button>
+      <button class="filter-btn" data-category="nature">Nature &amp; Highlands</button>
+    </div>
+
+    <section id="destination-list">
+      <div class="destination" data-category="cities" data-destination="asmara">
+        <img src="images/asmara.jpg" alt="Asmara" loading="lazy" class="dest-image">
+        <h3>Asmara</h3>
+        <p>The capital city is famous for its well-preserved Italian Art Deco architecture, tree-lined boulevards, and vibrant cafe culture. Stroll through the historic centre and visit the Fiat Tagliero building and Asmara Cathedral.</p>
+      </div>
+      <div class="destination" data-category="coastal" data-destination="massawa">
+        <img src="images/massawa.jpg" alt="Massawa" loading="lazy" class="dest-image">
+        <h3>Massawa</h3>
+        <p>This historic port city on the Red Sea features Ottoman-era buildings, coral stone houses, and fresh seafood. Massawa's warm climate and seaside atmosphere make it a favourite stop for visitors.</p>
+      </div>
+      <div class="destination" data-category="coastal" data-destination="dahlak">
+        <img src="images/dahlak.jpg" alt="Dahlak Islands" loading="lazy" class="dest-image">
+        <h3>Dahlak Islands</h3>
+        <p>An archipelago in the Red Sea known for crystal-clear waters, coral reefs, and marine life. Ideal for diving, snorkelling, and peaceful boat trips away from the crowds.</p>
+      </div>
+      <div class="destination" data-category="ruins" data-destination="qohaito">
+        <img src="images/qohaito.jpg" alt="Qohaito" loading="lazy" class="dest-image">
+        <h3>Qohaito</h3>
+        <p>An ancient archaeological site in the southern highlands with pre-Axumite ruins, rock art, and panoramic views. A must-see for history lovers and hikers.</p>
+      </div>
+      <div class="destination" data-category="nature" data-destination="filfil">
+        <img src="images/filfil.jpg" alt="Filfil and Selam" loading="lazy" class="dest-image">
+        <h3>Filfil and Selam</h3>
+        <p>Lush green highlands north of Asmara with cool weather, coffee plantations, and scenic walking trails. A refreshing contrast to Eritrea's coastal heat.</p>
+      </div>
+    </section>
+
+    <!-- Additional destination highlights -->
+    <section id="destination-highlights">
+      <h2>More to Discover</h2>
+      <p>Beyond the main destinations, Eritrea offers more unique experiences for adventurous travellers.</p>
+      <div class="highlights-grid">
+        <div class="highlight-card">
+          <span class="highlight-icon">🌄</span>
+          <h3>Southern Highlands</h3>
+          <p>Dramatic escarpments, traditional villages, and breathtaking mountain vistas ideal for photography and trekking.</p>
+        </div>
+        <div class="highlight-card">
+          <span class="highlight-icon">🏜️</span>
+          <p>Western Lowlands</p>
+          <p>Hot, arid landscapes with unique wildlife and cultural encounters with the Kunama and Nara peoples.</p>
+        </div>
+        <div class="highlight-card">
+          <span class="highlight-icon">🏛️</span>
+          <p>Keren</p>
+          <p>Eritrea's second-largest city, known for its bustling markets, Italian colonial buildings, and nearby camel market.</p>
+        </div>
+        <div class="highlight-card">
+          <span class="highlight-icon">🏖️</span>
+          <p>Green Island</p>
+          <p>A peaceful island getaway near Massawa with sandy beaches, clear waters, and relaxed seaside vibes.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Destination details modal -->
+    <div class="destination-modal" id="destination-modal" role="dialog" aria-modal="true" aria-label="Destination details">
+      <button class="destination-modal-close" id="destination-modal-close" aria-label="Close">&#215;</button>
+      <div class="destination-modal-content">
+        <h2 class="destination-modal-title" id="destination-modal-title"></h2>
+        <p class="destination-modal-summary" id="destination-modal-summary"></p>
+        <div class="destination-modal-body" id="destination-modal-body"></div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2026 Eritrea Uncovered. All rights reserved.</p>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

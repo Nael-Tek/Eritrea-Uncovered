@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Eritrea Uncovered</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Eritrea Uncovered</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Eritrea</a></li>
+      <li><a href="destinations.html">Destinations</a></li>
+
+      <li><a href="travel-planning.html">Travel Planning</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section id="welcome">
+      <h2>Welcome to Eritrea</h2>
+      <p>Discover the beauty of Eritrea, a country on the Red Sea coast of East Africa. From the historic streets of Asmara to the turquoise waters of the Dahlak Islands, Eritrea offers breathtaking landscapes, rich culture, and warm hospitality.</p>
+      <button onclick="showMessage()">Find out more about visiting Eritrea</button>
+      <p id="message"></p>
+    </section>
+
+    <!-- Featured destinations preview -->
+    <section id="featured-destinations">
+      <h2>Top Destinations to Explore</h2>
+      <p>Start your journey with Eritrea's most unforgettable places.</p>
+      <div class="featured-grid">
+        <article class="featured-card" onclick="location.href='destinations.html'">
+          <img src="images/asmara.jpg" alt="Asmara" loading="lazy">
+          <div class="featured-info">
+            <h3>Asmara</h3>
+            <p>Art Deco capital with Italian colonial architecture and vibrant cafe culture.</p>
+            <span class="featured-link">Explore &rarr;</span>
+          </div>
+        </article>
+        <article class="featured-card" onclick="location.href='destinations.html'">
+          <img src="images/massawa.jpg" alt="Massawa" loading="lazy">
+          <div class="featured-info">
+            <h3>Massawa</h3>
+            <p>Historic Red Sea port city with Ottoman-era buildings and fresh seafood.</p>
+            <span class="featured-link">Explore &rarr;</span>
+          </div>
+        </article>
+        <article class="featured-card" onclick="location.href='destinations.html'">
+          <img src="images/dahlak.jpg" alt="Dahlak Islands" loading="lazy">
+          <div class="featured-info">
+            <h3>Dahlak Islands</h3>
+            <p>Pristine coral reefs and crystal-clear waters perfect for diving and snorkelling.</p>
+            <span class="featured-link">Explore &rarr;</span>
+          </div>
+        </article>
+        <article class="featured-card" onclick="location.href='destinations.html'">
+          <img src="images/qohaito.jpg" alt="Qohaito" loading="lazy">
+          <div class="featured-info">
+            <h3>Qohaito</h3>
+            <p>Ancient archaeological site with pre-Axumite ruins and panoramic highland views.</p>
+            <span class="featured-link">Explore &rarr;</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Why visit / key highlights -->
+    <section id="why-visit">
+      <h2>Why Visit Eritrea?</h2>
+      <div class="highlights-grid">
+        <div class="highlight-item">
+          <span class="highlight-icon">🏛️</span>
+          <h3>UNESCO World Heritage</h3>
+          <p>Asmara's modernist architecture is recognised as a UNESCO World Heritage site.</p>
+        </div>
+        <div class="highlight-item">
+          <span class="highlight-icon">🌊</span>
+          <p>Pristine Red Sea coastline with some of the best diving in East Africa.</p>
+        </div>
+        <div class="highlight-item">
+          <span class="highlight-icon">☕</span>
+          <p>Rich coffee culture — experience the traditional Eritrean coffee ceremony.</p>
+        </div>
+        <div class="highlight-item">
+          <span class="highlight-icon">🏔️</span>
+          <p>Cool highland plateaus, dramatic escarpments, and scenic hiking trails.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to action -->
+    <section id="plan-trip">
+      <h2>Ready to Plan Your Trip?</h2>
+      <p>Get all the practical information you need — visas, flights, health, weather, currency, and more.</p>
+      <a href="travel-planning.html" class="cta-button">Travel Planning Guide &rarr;</a>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2026 Eritrea Uncovered. All rights reserved.</p>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

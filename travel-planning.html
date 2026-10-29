@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Planning | Eritrea Uncovered</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Eritrea Uncovered</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Eritrea</a></li>
+      <li><a href="destinations.html">Destinations</a></li>
+
+      <li><a href="travel-planning.html" class="active">Travel Planning</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section id="travel-intro">
+      <h2>Travel Planning &amp; Information</h2>
+      <p>Everything you need to know before you go — visas, flights, health, weather, currency, and more. Click any card to open the full guide.</p>
+    </section>
+
+    <div class="travel-grid">
+      <article class="travel-card" data-topic="visa">
+        <span class="card-icon">🛂</span>
+        <span class="card-badge">Guide</span>
+        <h3 class="card-title">Visa Guide</h3>
+        <p class="card-snippet">Essential tourist visa requirements, entry permits, and passport validity rules (valid for 6+ months).</p>
+        <p class="card-action">Apply via embassy &rarr;</p>
+      </article>
+
+      <article class="travel-card" data-topic="essentials">
+        <span class="card-icon">🎭</span>
+        <span class="card-badge">Reference</span>
+        <h3 class="card-title">Essentials</h3>
+        <p class="card-snippet">Cultural etiquette, local customs, emergency contacts, and power plug standards (Type C / L, 230V).</p>
+        <p class="card-action">Quick reference &rarr;</p>
+      </article>
+
+      <article class="travel-card" data-topic="flights">
+        <span class="card-icon">✈️</span>
+        <span class="card-badge">Info</span>
+        <h3 class="card-title">Flights</h3>
+        <p class="card-snippet">Direct and connecting routes into Asmara International Airport (ASM) via flydubai, EgyptAir, and Turkish Airlines.</p>
+        <p class="card-action">Durations &amp; tips &rarr;</p>
+      </article>
+
+      <article class="travel-card" data-topic="accommodation">
+        <span class="card-icon">🏨</span>
+        <span class="card-badge">Hotels</span>
+        <h3 class="card-title">Accommodation</h3>
+        <p class="card-snippet">Historic heritage hotels in Asmara (Art Deco landmarks), boutique stays, and coastal resorts in Massawa.</p>
+        <p class="card-action">Stays by region &rarr;</p>
+      </article>
+
+      <article class="travel-card" data-topic="getting-to">
+        <span class="card-icon">🌍</span>
+        <span class="card-badge">Gateway</span>
+        <h3 class="card-title">Getting to Eritrea</h3>
+        <p class="card-snippet">Air travel information — Asmara as the primary international gateway — and essential pre-arrival flight advice.</p>
+        <p class="card-action">Arrival advice &rarr;</p>
+      </article>
+
+      <article class="travel-card" data-topic="getting-around">
+        <span class="card-icon">🚕</span>
+        <span class="card-badge">Permits</span>
+        <h3 class="card-title">Getting around Eritrea</h3>
+        <p class="card-snippet">Travel permits (required outside Asmara), taxi services, rental cars, and regional buses.</p>
+        <p class="card-action">Secure permits &rarr;</p>
+      </article>
+
+      <article class="travel-card" data-topic="safety">
+        <span class="card-icon">🏥</span>
+        <span class="card-badge">Health</span>
+        <h3 class="card-title">Safety &amp; Health</h3>
+        <p class="card-snippet">Health guidelines, recommended vaccinations, general safety overview, and local emergency information.</p>
+        <p class="card-action">Health guide &rarr;</p>
+      </article>
+
+      <article class="travel-card" data-topic="weather">
+        <span class="card-icon">🌤️</span>
+        <span class="card-badge">Tips</span>
+        <h3 class="card-title">Weather &amp; Currency</h3>
+        <p class="card-snippet">Climate breakdown (cool highlands vs. warm coast) and currency tips (Eritrean Nakfa - ERN, cash preference, exchange tips).</p>
+        <p class="card-action">Climate &amp; cash &rarr;</p>
+      </article>
+    </div>
+  </main>
+
+  <!-- Travel information modal -->
+  <div class="travel-modal" id="travel-modal" role="dialog" aria-modal="true" aria-label="Travel guide details">
+    <button class="travel-modal-close" id="travel-modal-close" aria-label="Close">&#215;</button>
+    <div class="travel-modal-content">
+      <h2 class="travel-modal-title" id="travel-modal-title"></h2>
+      <p class="travel-modal-summary" id="travel-modal-summary"></p>
+      <div class="travel-modal-body" id="travel-modal-body"></div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Eritrea Uncovered. All rights reserved.</p>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
