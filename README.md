@@ -13,4 +13,4 @@ A tour guide website introducing Eritrea's best destinations history and culture
 - images/: pictures used on the site
 
 ## How to open
-Download or clone this repository, then open index.html in a web browser.
+Download as a zip file or clone this repository, then open index.html in a web browser.
